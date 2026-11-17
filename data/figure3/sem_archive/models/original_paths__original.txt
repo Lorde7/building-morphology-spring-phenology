@@ -1,0 +1,11 @@
+Wind ~ w*BMSI
+Shade ~ a*BMSI
+Received ~ b*Shade + q*DSR
+DayLST ~ c*Received + v*Wind + u*BMSI
+ST ~ t*DayLST + g*Received + k*Wind + h*BMSI
+BMSI ~~ DSR
+Shade ~~ DSR
+Wind ~~ DSR
+Wind ~~ Shade
+via_shade_LST := a*b*c*t
+via_wind_LST := w*v*t

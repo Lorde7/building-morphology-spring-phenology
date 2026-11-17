@@ -1,0 +1,22 @@
+# Tested versions for the root Figure 3e check
+numpy==1.26.4
+pandas==2.3.3
+matplotlib==3.8.0
+statsmodels==0.14.1
+# Additional archived analysis and optional drawing dependencies; versions not validated end-to-end.
+scipy
+scikit-learn
+xgboost
+rasterio
+numba
+netCDF4
+pygam
+joblib
+cartopy
+Pillow
+PyMuPDF
+
+# Spatial preprocessing
+geopandas
+shapely
+tqdm

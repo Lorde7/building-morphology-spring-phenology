@@ -1,0 +1,72 @@
+[
+  {
+    "key": "experiment_figure3_station_matching.path1",
+    "basename": "station-psm-expanded-no-opl-20261113-v01",
+    "script": "experiment_figure3_station_matching.py"
+  },
+  {
+    "key": "experiment_figure3_station_matching.path2",
+    "basename": "station_PSM_candidates.csv",
+    "script": "experiment_figure3_station_matching.py"
+  },
+  {
+    "key": "experiment_figure3_gam.path1",
+    "basename": "\u8bba\u6587\u56fe\u7ec4\u8bbe\u8ba1\u4e0eSEM\u6bd4\u8f83_20261008",
+    "script": "experiment_figure3_gam.py"
+  },
+  {
+    "key": "experiment_figure4_city_annual.path1",
+    "basename": "\u6c14\u5019\u6570\u636e",
+    "script": "experiment_figure4_city_annual.py"
+  },
+  {
+    "key": "experiment_figure4_city_annual.path2",
+    "basename": "phenology_doy",
+    "script": "experiment_figure4_city_annual.py"
+  },
+  {
+    "key": "experiment_figure4_city_annual.path3",
+    "basename": "city_OLS_original_climate",
+    "script": "experiment_figure4_city_annual.py"
+  },
+  {
+    "key": "resample_model_ST_Innovation_20261012.path1",
+    "basename": "sos_city_model_input_OLS_mean_dsr.csv",
+    "script": "resample_model_ST_Innovation_20261012.py"
+  },
+  {
+    "key": "resample_model_ST_Innovation_20261012.path2",
+    "basename": "zonal_all_pixels_sos_eos_preseason_building_sensitivity.npz",
+    "script": "resample_model_ST_Innovation_20261012.py"
+  },
+  {
+    "key": "resample_model_ST_Innovation_20261012.path3",
+    "basename": "olsAnalysis_sos_9bands_raw_units_min13.tif",
+    "script": "resample_model_ST_Innovation_20261012.py"
+  },
+  {
+    "key": "prepare_TRENDY_historical_ST_20261010.path1",
+    "basename": "04_\u5386\u53f2\u6a21\u578bST\u9a8c\u8bc1_20261010",
+    "script": "prepare_TRENDY_historical_ST_20261010.py"
+  },
+  {
+    "key": "prepare_TRENDY_historical_ST_20261010.path2",
+    "basename": "sos_city_model_input_OLS_mean_dsr.csv",
+    "script": "prepare_TRENDY_historical_ST_20261010.py"
+  },
+  {
+    "key": "prepare_TRENDY_historical_ST_20261010.path3",
+    "basename": "TerraClimate_ws_2001_M01_aligned_mask.tif",
+    "script": "prepare_TRENDY_historical_ST_20261010.py"
+  },
+  {
+    "key": "prepare_TRENDY_historical_ST_20261010.path4",
+    "basename": "climate_read_stage",
+    "script": "prepare_TRENDY_historical_ST_20261010.py"
+  },
+  {
+    "key": "collect_CMIP6_ST_stores_20261012.path1",
+    "basename": "04_\u5386\u53f2\u6a21\u578bST\u9a8c\u8bc1_20261010",
+    "script": "collect_CMIP6_ST_stores_20261012.py"
+  }
+]

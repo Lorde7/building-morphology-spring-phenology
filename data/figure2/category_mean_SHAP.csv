@@ -1,0 +1,5 @@
+﻿category,mean_abs_shap_per_predictor,n_predictors
+Building morphology,0.1241710080771904,1
+Climate,0.09145872250945149,10
+Vegetation,0.06301687367276164,8
+Urban attributes,0.050269457751955536,3

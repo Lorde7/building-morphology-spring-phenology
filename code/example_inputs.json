@@ -1,0 +1,10 @@
+{
+  "figure1_city_metadata": "/existing_inputs/city_metadata_638.csv",
+  "figure1_zonal_npz": "/existing_inputs/zonal_all_pixels.npz",
+  "figure1_ols_raster": "/existing_inputs/olsAnalysis_sos_9bands_raw_units.tif",
+  "figure1_opl_raster": "/existing_inputs/OPL_sos_prevOct_preseason_lag_merged.tif",
+  "figure1_radiation_pixels": "/existing_inputs/pixel_shade_received_DSR_aligned.csv",
+  "figure2_city_metadata": "/existing_inputs/city_metadata_638.csv",
+  "figure2_exclusion_root": "/existing_inputs/exclusion636",
+  "figure2_environment_root": "/existing_inputs/environment_expansion"
+}

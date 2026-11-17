@@ -1,0 +1,9 @@
+{
+  "name": "prepare_e",
+  "kind": "psm_prepare",
+  "args": {
+    "which": "e",
+    "baseline": false
+  },
+  "memory_GiB": 4
+}
