@@ -7,7 +7,7 @@ import os
 import runpy
 import sys
 HERE = Path(__file__).resolve().parent
-ENTRIES = {'1': 'experiment_figure1_partial_spearman.py', '2': 'experiment_figure2_xgboost_support.py', '3-psm': 'experiment_figure3_station_matching.py', '3-gam': 'experiment_figure3_gam.py', '4': 'experiment_figure4_city_annual.py'}
+ENTRIES = {'1': 'spatial_associations.py', '2': 'predictive_analysis.py', '3-psm': 'mechanism_station_matching.py', '3-gam': 'mechanism_gam.py', '4': 'model_city_annual.py'}
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

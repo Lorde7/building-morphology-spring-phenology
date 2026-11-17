@@ -22,9 +22,9 @@ from rasterio.vrt import WarpedVRT
 from rasterio.enums import Resampling
 from scipy.sparse import csr_matrix
 from scipy.stats import t as student_t
-from resample_model_ST_Innovation_20261012 import OUT as PREVIOUS, MODELROOT, RESULT, CITY, interp, weighted_city
-from calculate_TRENDY_historical_ST_benchmark_20261010 import optimized, regress
-from calculate_all20_model_ST_20261012 import common_predictors
+from resample_model_sensitivity import OUT as PREVIOUS, MODELROOT, RESULT, CITY, interp, weighted_city
+from calculate_vegetation_model_sensitivity import optimized, regress
+from calculate_model_sensitivity import common_predictors
 OUT = PREVIOUS / 'city_annual_OLS_global_maps'
 YEARS = np.arange(2001, 2021)
 CLIMATE = Path(configured_path('experiment_figure4_city_annual.path1'))
@@ -264,7 +264,7 @@ def main():
     masks = pd.DataFrame([dict(city_id=int(cid), year=int(y), valid_all_models=bool(shared[j, i])) for (i, cid) in enumerate(q['cities']) for (j, y) in enumerate(YEARS)])
     masks.to_csv(OUT / 'source_data/city_common_valid_years.csv', index=False, encoding='utf-8-sig')
     metrics = []
-    from resample_model_ST_Innovation_20261012 import metric
+    from resample_model_sensitivity import metric
     for (model, g) in allrows.groupby('model'):
         metrics.append(dict(model=model, family=g.family.iloc[0], n_significant_model=int((g.P_model < 0.05).sum()), **metric(g.ST_observed.to_numpy(), g.ST_model.to_numpy())))
     ensemble = []

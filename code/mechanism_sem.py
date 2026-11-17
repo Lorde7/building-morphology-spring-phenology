@@ -15,7 +15,7 @@ def main():
         parser.error('Rscript and lavaan are required')
     if not arguments.workdir.is_dir():
         parser.error('SEM working directory does not exist')
-    script = Path(__file__).with_name('experiment_figure3_sem_original.R')
+    script = Path(__file__).with_name('mechanism_sem_original.R')
     result = subprocess.run([executable, str(script), str(arguments.workdir.resolve()), str(arguments.archive.resolve())], check=False)
     raise SystemExit(result.returncode)
 if __name__ == '__main__':

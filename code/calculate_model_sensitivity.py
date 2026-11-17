@@ -17,8 +17,8 @@ import sys, json, shutil
 import numpy as np, pandas as pd, numba, statsmodels.api as sm
 from scipy.stats import pearsonr
 from model_paths import OUT
-from prepare_TRENDY_historical_ST_20261010 import MODELS as TRENDY
-from calculate_TRENDY_historical_ST_benchmark_20261010 import regress, optimized, metric
+from prepare_vegetation_model_inputs import MODELS as TRENDY
+from calculate_vegetation_model_sensitivity import regress, optimized, metric
 RESULT = OUT / 'ST_comparison_all_models'
 YEARS = np.arange(2001, 2021)
 

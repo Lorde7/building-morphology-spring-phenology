@@ -14,11 +14,11 @@ ROOT = Path(__file__).resolve().parent
 def main():
     parser = argparse.ArgumentParser(
         description=__doc__,
-        epilog='The full SEM entry is code/experiment_figure3_sem.py and requires R with lavaan.',
+        epilog='The full SEM entry is code/mechanism_sem.py and requires R with lavaan.',
     )
     parser.add_argument('--output', type=Path, required=True, help='Output figure path')
     args = parser.parse_args()
-    d = pd.read_csv(ROOT / 'data' / 'figure3e_station_pairs.csv')
+    d = pd.read_csv(ROOT / 'data' / 'station_pairs.csv')
     assert len(d) == 373 and np.allclose(d.high_wind-d.low_wind, d.delta_wind)
     fit = sm.OLS(d.delta_wind, np.ones((len(d), 1))).fit(
         cov_type='cluster', cov_kwds={'groups': d.pair_pixel_cluster})

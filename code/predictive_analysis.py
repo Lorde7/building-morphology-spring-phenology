@@ -66,7 +66,7 @@ def main():
     assert np.all(support > 0)
     y = d[TARGET].to_numpy(float)
     outer = orig.outer_fold.to_numpy(int)
-    from figure2_parameters import FEATURE_GROUPS, CANDIDATE_PARAMETERS
+    from predictive_parameters import FEATURE_GROUPS, CANDIDATE_PARAMETERS
     groups = {k: FEATURE_GROUPS[k] for k in ['core18', 'climate24']}
     full = groups['climate24']
     matrices = {k: d[fs].to_numpy(np.float32) for (k, fs) in groups.items()}

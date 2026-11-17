@@ -18,7 +18,7 @@ import numpy as np, pandas as pd
 from scipy.stats import pearsonr, t as student_t
 import numba
 import run_preseason_pipeline_wind_grid as base
-from prepare_TRENDY_historical_ST_20261010 import OUT, ROOT, MODELS
+from prepare_vegetation_model_inputs import OUT, ROOT, MODELS
 YEARS = np.arange(2001, 2021)
 
 def save(path, obj):
